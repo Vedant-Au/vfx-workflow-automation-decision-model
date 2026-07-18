@@ -14,4 +14,4 @@ The fixed weights reflect near-term decision priorities. A 10,000-draw Dirichlet
 
 ## Evidence boundary
 
-The criteria and relative scores are a portfolio enhancement derived from the case SWOT and workflow evidence. They are not measured implementation results or vendor benchmarks. A real procurement decision should replace them through stakeholder scoring, technical discovery and commercial quotes.
+The criteria and relative scores extend the case SWOT and workflow evidence into a transparent decision model. They are not measured implementation results or vendor benchmarks. A real procurement decision should replace them through stakeholder scoring, technical discovery and commercial quotes.
