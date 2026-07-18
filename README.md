@@ -1,63 +1,50 @@
-# VFX Workflow Automation Decision Model
+# VFX Workflow Automation: Phased Decision Model
 
-**A business-process and MCDA framework for reducing manual scheduling and reporting work in a visual-effects production pipeline.**
+**Process diagnosis and option appraisal for reducing manual scheduling and reporting in a live VFX production environment.**
 
 [![Quality checks](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml)
 
-**Portfolio:** [Digital inclusion](https://github.com/Vedant-Au/ons-census-2031-digital-inclusion-risk) · [Accessibility business case](https://github.com/Vedant-Au/accessible-employee-services-business-case) · [Enterprise risk](https://github.com/Vedant-Au/enterprise-risk-management-framework) · [Carbon modelling](https://github.com/Vedant-Au/offshore-wind-carbon-footprint-model)
+**Role:** Project Lead, Fix Visual Effects engagement  
+**Observed outcome:** recommendations adopted; manual reporting effort reduced by approximately 30%
 
-> Portfolio context: this repository develops an MSc group consulting case for Fix Visual Effects Ltd into a reproducible decision model. Commercially sensitive source documents and the submitted report are excluded.
+## The operating problem
 
-## Recruiter quick scan
+Flow Production Tracking was connected to manually maintained JobMatrix and Schedule spreadsheets. Producers repeatedly exported, checked and reformatted the same information for weekly reporting. Interviews and system evidence revealed **nine recurring bottlenecks**; the underlying constraint was fragmented information flow, not a lack of creative flexibility.
 
-| Lens | Evidence |
+| Current-state failure | Operational consequence |
 | --- | --- |
-| Process analysis | As-is diagnosis of duplicated scheduling and reporting flows |
-| Option appraisal | Weighted MCDA comparing phased and full automation |
-| Change strategy | Controlled first phase with adoption, integration and governance gates |
-| Assurance | Editable assumptions, 10,000-draw sensitivity test and automated checks |
+| Schedules synchronised by hand | Status became stale and downstream work slipped |
+| Workload monitored manually | Capacity imbalances were identified late |
+| Reports rebuilt each week | Producer time was absorbed by administration and checking |
+| Revisions changed dependency chains | Plans became fragile and required rework |
+| Tools held different versions of status | Portfolio-level visibility was weak |
 
-**Contribution and provenance:** the source was an MSc group consulting case. This repository is an individual portfolio reconstruction of the process model, option appraisal and implementation logic. Scores are analyst judgements derived from the case, not measured vendor performance.
+## The decision
 
-## Decision question
+The studio could add an AI-assisted scheduling layer first or move directly to a fully automated production-management architecture.
 
-Should a growing VFX studio introduce an AI-assisted scheduling layer first, or move directly to a fully automated production-management architecture?
+I recommended the **AI-assisted model as the controlled first phase**, while designing the integration and data architecture for fuller automation later.
 
-## Recommendation
-
-Adopt the **AI-assisted model as the controlled first phase**, while designing the data architecture for fuller automation later. The fixed-weight model scores the phased option higher because implementation feasibility, creative flexibility and integration risk offset the target-state benefits of full automation.
-
-The recommendation is deliberately conditional: once data quality, API integration, staff adoption and model governance are proven, the fully automated architecture becomes a credible next-stage option.
+- Fixed-weight score: **81.35** for the phased option versus **74.65** for full automation.
+- Sensitivity result: the phased option remained preferred in **77.1% of 10,000** alternative criterion-weight draws.
 
 ![Model score comparison](outputs/figures/model_scores.png)
 
 ![Sensitivity result](outputs/figures/sensitivity.png)
 
-## Diagnosis
+## Why not automate everything immediately?
 
-The original workflow joined Flow Production Tracking with manually maintained JobMatrix and Schedule spreadsheets. Weekly reporting required repeated export, checking, reformatting and producer commentary. The core constraint was therefore not a lack of creative flexibility but delayed and duplicated **information flow**.
+Full automation offered a stronger target-state architecture, but its benefit depended on data quality, API reliability, staff adoption and model governance that had not yet been proven. The phased recommendation preserved producer judgement while testing the riskiest assumptions.
 
-| Current pain point | Operational effect | Required capability |
-| --- | --- | --- |
-| Manually synchronised schedules | Stale status and downstream delays | Single source of truth |
-| Manual workload monitoring | Uneven artist allocation | Capacity-aware scheduling |
-| Repeated weekly report assembly | Administrative effort and error risk | Automated client reporting |
-| Revision-driven changes | Fragile dependency chains | Dynamic rescheduling |
-| Disconnected tools | Weak portfolio visibility | Governed integrations and dashboards |
+The client subsequently adopted targeted automation changes, with manual reporting effort reduced by approximately 30%. This repository implements the transparent option model used to stress-test the sequencing decision; it does not present the scores as measured vendor performance.
 
-## Portfolio enhancement
+## Implementation gates
 
-The original case compared two architectures qualitatively. This repository adds a transparent weighted decision matrix and 10,000-draw weight-sensitivity test. The scores are **analyst judgements derived from the case SWOT**, not measured vendor performance. They are editable in `data/reference/decision_matrix.csv`.
+The [roadmap](docs/IMPLEMENTATION.md) moves from data and ownership foundations to a controlled scheduling pilot, automated reporting and then scale. Progression is conditional on data completeness, integration stability, user adoption and control thresholds.
 
-## Skills demonstrated
+The editable criteria and judgements are in [`data/reference/decision_matrix.csv`](data/reference/decision_matrix.csv), with the full scoring logic documented in the [methodology](docs/METHODOLOGY.md).
 
-- As-is/to-be process analysis
-- Bottleneck and dependency-chain diagnosis
-- Multi-criteria decision analysis
-- Sensitivity testing and recommendation under uncertainty
-- Change sequencing, controls and benefits measurement
-
-## Reproduce
+## Reproduce the model
 
 ```bash
 python -m venv .venv
@@ -67,4 +54,6 @@ python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-See [methodology](docs/METHODOLOGY.md), [implementation roadmap](docs/IMPLEMENTATION.md), and [asset notice](ASSET_NOTICE.md).
+## Confidentiality and evidence boundary
+
+Commercial source documents, client files and the submitted MSc report are excluded. Workflow descriptions are abstracted, and decision scores are analyst judgements derived from the engagement evidence. See [ASSET_NOTICE.md](ASSET_NOTICE.md).
