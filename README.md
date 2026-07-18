@@ -17,7 +17,7 @@ Flow Production Tracking was connected to manually maintained JobMatrix and Sche
 | Workload monitored manually | Capacity imbalances were identified late |
 | Reports rebuilt each week | Producer time was absorbed by administration and checking |
 | Revisions changed dependency chains | Plans became fragile and required rework |
-| Tools held different versions of status | Portfolio-level visibility was weak |
+| Tools held different versions of status | Cross-project visibility was weak |
 
 ## The decision
 
