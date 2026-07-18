@@ -2,7 +2,22 @@
 
 **A business-process and MCDA framework for reducing manual scheduling and reporting work in a visual-effects production pipeline.**
 
+[![Quality checks](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml)
+
+**Portfolio:** [Digital inclusion](https://github.com/Vedant-Au/ons-census-2031-digital-inclusion-risk) · [Accessibility business case](https://github.com/Vedant-Au/accessible-employee-services-business-case) · [Enterprise risk](https://github.com/Vedant-Au/enterprise-risk-management-framework) · [Carbon modelling](https://github.com/Vedant-Au/offshore-wind-carbon-footprint-model)
+
 > Portfolio context: this repository develops an MSc group consulting case for Fix Visual Effects Ltd into a reproducible decision model. Commercially sensitive source documents and the submitted report are excluded.
+
+## Recruiter quick scan
+
+| Lens | Evidence |
+| --- | --- |
+| Process analysis | As-is diagnosis of duplicated scheduling and reporting flows |
+| Option appraisal | Weighted MCDA comparing phased and full automation |
+| Change strategy | Controlled first phase with adoption, integration and governance gates |
+| Assurance | Editable assumptions, 10,000-draw sensitivity test and automated checks |
+
+**Contribution and provenance:** the source was an MSc group consulting case. This repository is an individual portfolio reconstruction of the process model, option appraisal and implementation logic. Scores are analyst judgements derived from the case, not measured vendor performance.
 
 ## Decision question
 
@@ -52,4 +67,4 @@ python analysis.py
 python -m unittest discover -s tests -v
 ```
 
-See [methodology](docs/METHODOLOGY.md), [implementation roadmap](docs/IMPLEMENTATION.md), [asset notice](ASSET_NOTICE.md), and [GitHub setup](GITHUB_SETUP.md).
+See [methodology](docs/METHODOLOGY.md), [implementation roadmap](docs/IMPLEMENTATION.md), and [asset notice](ASSET_NOTICE.md).
