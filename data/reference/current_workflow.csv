@@ -1,0 +1,7 @@
+sequence,stage,activity,primary_system,manual_dependency,risk
+1,Inquiry,Receive client requirements,Email/brief,Medium,Incomplete requirements
+2,Planning,Build budget schedule and artist plan,JobMatrix and Schedule sheets,High,Stale availability and duplicated entries
+3,Production,Assign and execute shots,Flow Production Tracking,Medium,Downstream dependency delays
+4,Review,Supervisor and client feedback cycles,Flow Production Tracking plus email,High,Revision volatility
+5,Reporting,Export verify format and annotate status,Sheets plus email,High,Rework and human error
+6,Delivery,Format and deliver final renders,Production pipeline,Low,Deadline and quality risk

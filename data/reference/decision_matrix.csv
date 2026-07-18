@@ -1,0 +1,7 @@
+criterion,weight,ai_assisted,fully_automated,rationale
+Implementation feasibility,0.25,85,55,Phased deployment reduces transition and integration burden
+Real-time visibility,0.20,80,95,Full integration offers the strongest consolidated view
+Workload optimisation,0.20,88,92,Both models improve allocation with a slight full-automation advantage
+Creative flexibility,0.15,80,60,Human scheduling judgement is retained more explicitly in the assisted model
+Scalability,0.10,80,95,The target-state architecture scales with less manual coordination
+Data and integration resilience,0.10,65,50,Both require controls but full automation creates greater dependency risk
