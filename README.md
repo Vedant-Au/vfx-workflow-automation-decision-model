@@ -1,6 +1,6 @@
 # VFX Workflow Automation
 
-### From nine workflow bottlenecks to a controlled AI-assisted pilot
+> From nine workflow bottlenecks to a controlled AI-assisted pilot
 
 [![Quality checks](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml)
 
