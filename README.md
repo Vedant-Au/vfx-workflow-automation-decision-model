@@ -4,7 +4,9 @@
 
 [![Quality checks](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml)
 
-**Engagement:** Fix Visual Effects | **Role:** Project Lead | **Status:** recommendation and decision model; no pilot has been run yet
+**Engagement:** Fix Visual Effects Ltd (live client project, BEBA module, MSc Business Analysis and Consulting) · Feb 2026 | **Team of 6** | **Status:** recommendation and decision model; no pilot has been run yet
+
+**[One-page summary (PDF)](one-pager.pdf)**
 
 ## Before → intervention → result
 
