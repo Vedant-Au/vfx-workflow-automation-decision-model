@@ -1,10 +1,10 @@
 # VFX Workflow Automation
 
-> From nine workflow bottlenecks to a controlled AI-assisted pilot
+> From duplicated manual entry to a controlled AI-assisted pilot
 
 [![Quality checks](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml/badge.svg)](https://github.com/Vedant-Au/vfx-workflow-automation-decision-model/actions/workflows/quality.yml)
 
-**Engagement:** Fix Visual Effects | **Role:** Project Lead | **Observed outcome:** targeted changes adopted; manual reporting effort reduced by approximately **30%**
+**Engagement:** Fix Visual Effects | **Role:** Project Lead | **Status:** recommendation and decision model; no pilot has been run yet
 
 ## Before → intervention → result
 
@@ -16,7 +16,7 @@ flowchart LR
     D --> E["Late capacity signals"]
 ```
 
-Producers were not short of software. They were short of a dependable flow of information between production tracking, schedules and client reporting. Interviews and system evidence identified nine recurring bottlenecks: duplicated status entry, stale schedules, late workload signals and repeated report assembly.
+Producers were not short of software. They were short of a dependable flow of information between production tracking, schedules and client reporting. Interviews and system evidence identified several recurring bottlenecks: duplicated status entry, stale schedules, late workload signals and repeated report assembly. The root cause was that schedules in Google Sheets and the JobMatrix were maintained by hand, separately, so double entry rather than scheduling logic drove missed deadlines and coordination overload.
 
 The engagement recommendation was deliberately narrower than “automate the studio”: establish one governed data flow, pilot AI-assisted scheduling with producer approval, and automate recurring reporting only after the underlying status data proved reliable.
 
